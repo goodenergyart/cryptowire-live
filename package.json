@@ -1,0 +1,45 @@
+{
+  "name": "cryptowire-live",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Real-time multi-chain blockchain intelligence platform powered by Lakesail data streams and AI analysis",
+  "author": "CryptoWire Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodenergyart/cryptowire-live.git"
+  },
+  "homepage": "https://goodenergyart.github.io/cryptowire-live",
+  "bugs": {
+    "url": "https://github.com/goodenergyart/cryptowire-live/issues"
+  },
+  "keywords": [
+    "blockchain",
+    "cryptocurrency",
+    "defi",
+    "real-time",
+    "analytics",
+    "lakesail",
+    "web3",
+    "multi-chain",
+    "ethereum",
+    "bitcoin",
+    "solana",
+    "polygon",
+    "kava"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build --outDir dist",
+    "lint": "bunx tsc --noEmit && bunx biome lint --write",
+    "format": "bunx biome format --write",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "deploy": "gh-pages -d dist",
+    "deploy:netlify": "netlify deploy --prod --dir=dist"
+  },
+// ... existing code ... <dependencies and devDependencies>
+}
